@@ -1,5 +1,6 @@
-@import "../src/assets/sass/variables.scss";
-@import "../src/assets/sass/mixins.scss";
+@use "../src/assets/sass/variables.scss" as *;
+@use "../src/assets/sass/mixins.scss" as *;
+
 
 #root {
   max-width: 1280px;
