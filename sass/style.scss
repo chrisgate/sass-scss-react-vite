@@ -1,0 +1,46 @@
+@import "variables"; /* prefexing your file with underscore (_variables.scss) make the compiler not to compile the file and allow us to import it without underscorce ("variables")*/
+@import "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//I am a comment
+// this is a single line comment
+// below are the concepts of SASS or SCSS 
+// 1. Variables
+// 2. Operations
+// 3. Nesting of styles
+// 4. Mixin
+// 5. Mix with parameters
+// 6. Single line comment
+// 7. Partial and import
+
+
+
+
+.main-container {
+  @include display-center; /*  mixin usage*/
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-color; /*  Variable usage*/
+
+  h2 {
+    /*Nesting*/
+    @include text-styling(uppercase,0.9rem);/*  mixin with parameter usage*/
+
+    &:hover {
+      /*Nesting*/
+      color: rgb(228, 127, 127);
+    }
+    &::before {
+      content: "You are ";
+    }
+  }
+
+  p {
+    /*Nesting*/
+    @include text-styling(lowercase,1.5rem);
+  }
+}

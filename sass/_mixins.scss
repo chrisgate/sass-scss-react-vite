@@ -1,0 +1,15 @@
+@mixin display-center {
+    /*  mixin declaration*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    place-items: center;
+  }
+  @mixin text-styling($textTsfm,$letterSp) {/*  mixin  with parameters (mixin is like function in Javascript)*/
+    color: crimson;
+    font-size: $fs-2 + 1; /* Operation + * - / */
+    text-transform: $textTsfm;
+    letter-spacing: $letterSp;
+  }
+  

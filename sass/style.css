@@ -1,0 +1,44 @@
+/*  Variable declaration*/
+/* prefexing your file with underscore (_variables.scss) make the compiler not to compile the file and allow us to import it without underscorce ("variables")*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  /*  mixin declaration*/
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  place-items: center;
+  /*  mixin usage*/
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow; /*  Variable usage*/
+}
+.main-container h2 {
+  /*Nesting*/
+  /*  mixin  with parameters (mixin is like function in Javascript)*/
+  color: crimson;
+  font-size: 2.2rem; /* Operation + * - / */
+  text-transform: uppercase;
+  letter-spacing: 0.9rem;
+  /*  mixin with parameter usage*/
+}
+.main-container h2:hover {
+  /*Nesting*/
+  color: rgb(228, 127, 127);
+}
+.main-container h2::before {
+  content: "You are ";
+}
+.main-container p {
+  /*Nesting*/
+  /*  mixin  with parameters (mixin is like function in Javascript)*/
+  color: crimson;
+  font-size: 2.2rem; /* Operation + * - / */
+  text-transform: lowercase;
+  letter-spacing: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
